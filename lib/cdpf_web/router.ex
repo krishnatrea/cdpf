@@ -18,6 +18,7 @@ defmodule CdpfWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/login", LoginController, :login
   end
 
   # Other scopes may use custom stacks.

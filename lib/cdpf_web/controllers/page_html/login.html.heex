@@ -1,0 +1,75 @@
+<.flash_group flash={@flash} />
+<div class="relative flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 via-indigo-600 to-purple-700 overflow-hidden">
+    <!-- Decorative SVG Background -->
+    <div class="absolute inset-0 z-0">
+      <svg
+        class="absolute top-0 left-0 w-64 h-64 text-blue-400 opacity-20"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path d="M8 0a8 8 0 100 16A8 8 0 108 0zm0 1a7 7 0 110 14A7 7 0 018 1z" />
+      </svg>
+      <svg
+        class="absolute bottom-0 right-0 w-96 h-96 text-purple-400 opacity-30"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <circle cx="12" cy="12" r="10" />
+      </svg>
+    </div>
+  
+    <!-- Login Card -->
+    <div class="relative z-10 w-full max-w-md p-8 bg-white rounded-2xl shadow-2xl">
+      <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">
+        Welcome Back!
+      </h1>
+      <form action="/login" method="post">
+        <div class="mb-4">
+          <label
+            for="email"
+            class="block text-sm font-semibold text-gray-600 mb-2"
+          >
+            Email Address
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            for="password"
+            class="block text-sm font-semibold text-gray-600 mb-2"
+          >
+            Password
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <div class="mb-4 text-center">
+          <button
+            type="submit"
+            class="w-full px-4 py-3 text-white bg-indigo-600 rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          >
+            Log In
+          </button>
+        </div>
+        <div class="text-center">
+          <a href="/register" class="text-indigo-500 hover:underline text-sm">
+            Don't have an account? Sign up
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+  
