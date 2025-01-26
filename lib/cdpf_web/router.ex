@@ -19,6 +19,8 @@ defmodule CdpfWeb.Router do
 
     get "/", PageController, :home
     get "/login", LoginController, :login
+    get "/signup", LoginController, :signup
+
   end
 
   # Other scopes may use custom stacks.
